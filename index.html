@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Leitura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="page1" class="page-content">
+            <h2>Página 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae eros et justo rhoncus lacinia. Donec tincidunt vehicula metus, eu eleifend lectus vehicula ac. Duis vitae purus vitae ex convallis tristique.</p>
+        </div>
+        
+        <div id="page2" class="page-content">
+            <h2>Página 2</h2>
+            <p>Quisque efficitur, nisi eu gravida venenatis, velit ligula convallis tellus, vel facilisis eros elit et arcu. Sed consequat sapien ut nisi feugiat tempor. In sed sapien semper, blandit nisi sit amet, fermentum tortor.</p>
+        </div>
+        
+        <div id="page3" class="page-content">
+            <h2>Página 3</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sed velit ut risus ultricies interdum. Aliquam erat volutpat.</p>
+        </div>
+        
+        <div id="page4" class="page-content">
+            <h2>Página 4</h2>
+            <p>Curabitur euismod elit id velit tempor, vel suscipit purus efficitur. Nunc ultricies urna id libero tristique, id luctus lorem volutpat. Proin vulputate lobortis turpis.</p>
+        </div>
+        
+        <div class="controls">
+            <button id="prevBtn">Voltar</button>
+            <button id="nextBtn">Avançar</button>
+            <button id="bookmarkBtn">Marcar Página</button>
+            <button id="settingsBtn">⚙</button>
+            <div id="settingsPanel" class="settings-panel hidden">
+                <h2>Configurações</h2>
+                <label for="themeSelect">Tema:</label>
+                <select id="themeSelect">
+                    <option value="light">Claro</option>
+                    <option value="dark">Escuro</option>
+                </select>
+                <label for="fontSizeInput">Tamanho da Fonte:</label>
+                <input type="number" id="fontSizeInput" min="12" max="36" step="1">
+                <label for="lineHeightInput">Espaçamento entre Linhas:</label>
+                <input type="number" id="lineHeightInput" min="1" max="2" step="0.1">
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
